@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Simple Static Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <button id="logoutBtn" style="display:none;">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to the Home Page!</h1>
+        <p>This is some dummy content. If you're logged in, you'll see a secret message.</p>
+        <div id="secretMsg" style="display:none;">Secret: You're authenticated! (Dummy cred check passed.)</div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        checkAuth();
+    </script>
+</body>
+</html>
